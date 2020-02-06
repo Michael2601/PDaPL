@@ -14,10 +14,12 @@ import java.util.Scanner;
  */
 public class Runner {
     public static void main(String[] args) {
-        long number = getLong();
-        System.out.println("Binary view : " + Long.toBinaryString(number));
+        Scanner sc = new Scanner(System.in);
+        int number = GlobalUtil.getNumber(sc);
+        sc.close();
+        System.out.println("Binary view : " + Integer.toBinaryString(number));
         System.out.println("# of unit bits : " + bitCounter(number));
-        GlobalUtil.postScriptum("Michael Sheshilov", "05.02.2020 18:00");
+        GlobalUtil.postScriptum("Michael Sheshilov", "06.02.2020 22:00");
     }
 
     /**
@@ -26,35 +28,12 @@ public class Runner {
      * @param number decimal number
      * @return Number of unit bits
      */
-    private static int bitCounter(long number) {
+    private static int bitCounter(int number) {
         int count = 0;
         while (number != 0) {
             count++;
             number = number & (number - 1);
         }
         return count;
-    }
-
-    /**
-     * <p>Get long number from keyboard input</p>
-     *
-     * @return Long number
-     */
-    private static long getLong() {
-        Scanner input = new Scanner(System.in);
-        long number;
-        while (true) {
-            System.out.print("Input a number: ");
-            if (input.hasNextLong())
-                number = input.nextInt();
-            else {
-                System.out.println("Incorrect input!");
-                input.next();
-                continue;
-            }
-            input.close();
-            break;
-        }
-        return number;
     }
 }

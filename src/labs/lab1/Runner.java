@@ -21,7 +21,9 @@ import java.util.Scanner;
  * документации.В заданиях на числа объект можно создавать в виде массива символов.
  * Ввести n чисел с консоли.</p>
  * <p><strong>Вариант 27</strong></p>
- * Выяснить,какое число встречается в какой строке раньше-положительное или отрицательное.
+ * Даны две переменные целого типа: A и B. Если их значения не равны, то
+ * присвоить каждой переменной большее из этих значений, а если равны, то присвоить
+ * переменным нулевые значения. Вывести новые значения переменных A и B.
  */
 
 public class Runner {
@@ -49,8 +51,8 @@ public class Runner {
                     factorial(GlobalUtil.getNumber(sc));
                     break;
                 case 5:
-                    System.out.println("Individual task\nEnter rows and columns:");
-                    individualTask(createArray(sc, GlobalUtil.getNumber(sc), GlobalUtil.getNumber(sc)));
+                    System.out.println("Individual task\nEnter 2 numbers:");
+                    individualTask(GlobalUtil.getNumber(sc), GlobalUtil.getNumber(sc));
                     break;
                 case 6:
                     cycleBool = false;
@@ -127,35 +129,22 @@ public class Runner {
     }
 
     /**
-     * <p>Output which number is earlier positive or negative in each row</p>
+     * <p>Compares and changes the meaning of equality and inequality</p>
      *
-     * @param arr array for task
+     * @param a first number for comparison
+     * @param b first number for comparison
      */
-    private static void individualTask(int[][] arr) {
-        for (int i = 0; i < arr.length; i++)
-            if (arr[i][0] > 0)
-                System.out.printf("In %d row positive number has met before.\n", i + 1);
-            else if (arr[i][0] < 0)
-                System.out.printf("In %d row negative number has met before.\n", i + 1);
-            else
-                System.out.printf("In %d row zero has met before.\n", i + 1);
+    private static void individualTask(int a, int b) {
+        int max = Math.max(a, b);
+        if (a != b) {
+            a = max;
+            b = max;
+        } else {
+            a = 0;
+            b = 0;
+        }
+        System.out.printf("A = %d\tB = %d", a, b);
     }
 
-    /**
-     * <p>Filling a two-dimensional array</p>
-     *
-     * @param input   Scanner object
-     * @param rows    number of rows in array
-     * @param columns number of columns in array
-     */
-    private static int[][] createArray(Scanner input, int rows, int columns) {
-        int[][] arr = new int[rows][columns];
-        System.out.println("Filling array:");
-        for (int i = 0; i < rows; i++)
-            for (int j = 0; j < columns; j++) {
-                arr[i][j] = GlobalUtil.getNumber(input);
-            }
-        return arr;
-    }
 
 }

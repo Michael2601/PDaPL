@@ -2,17 +2,21 @@ package practices.practice2;
 
 import utils.GlobalUtil;
 
+import java.util.Arrays;
+import java.util.Random;
 import java.util.Scanner;
+
 /**
- *
- *
  * Сгенерировать 20 случайных целых чисел в диапазоне от -5 до 4, записать их в ячейки массива.
  * Посчитать сколько среди них положительных, отрицательных и нулевых значений. Вывести на экран
  * элементы массива и посчитанные количества.
- *
- *Выяснить, какое число встречается в какой строке раньше - положительное или отрицательное
- * */
+ * <p>
+ * Выяснить, какое число встречается в какой строке раньше - положительное или отрицательное
+ */
 public class Runner {
+    private static final int COUNT_NUM = 20;
+    private static final int FROM = -5;
+    private static final int TO = 4;
 
     public static void main(String[] args) {
         boolean cycleBool = true;
@@ -21,7 +25,13 @@ public class Runner {
         while (cycleBool) {
             switch (GlobalUtil.getNumber(sc)) {
                 case 1:
-                    System.out.println("Individual task 1\nEnter rows and columns:");
+                    System.out.println("Individual task 1\n");
+                    int[] arr = new Random(System.currentTimeMillis()).ints(COUNT_NUM, FROM, TO).toArray();
+                    Arrays.stream(arr).forEach(s -> System.out.print(s + " "));
+                    System.out.println();
+                    System.out.println(Arrays.stream(arr).filter(s -> s > 0).count());
+                    System.out.println(Arrays.stream(arr).filter(s -> s < 0).count());
+                    System.out.println(Arrays.stream(arr).filter(s -> s == 0).count());
                     break;
                 case 2:
                     System.out.println("Individual task 2\nEnter rows and columns:");

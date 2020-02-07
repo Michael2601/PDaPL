@@ -1,34 +1,23 @@
 package labs.lab3;
 
-import java.util.ArrayList;
+import utils.GlobalUtil;
+
 import java.util.List;
 import java.util.Random;
+import java.util.stream.Collectors;
 
 public class Runner {
     private static final int COUNT_NUM = 15;
-    private static List<Integer> list = new ArrayList<>(COUNT_NUM);
+    private static final int FROM = -15;
+    private static final int TO = 15;
+
+    private static List<Integer> list;
 
     public static void main(String[] args) {
-        enterList();
-        printList();
-        list.stream()
-                .sorted((x, y) -> (y - x))
-                .forEach(System.out::println);
-    }
-
-    private static void enterList() {
-        Random random = new Random(System.currentTimeMillis());
-
-        for(int i = 0; i < COUNT_NUM; i++)
-        {
-            int number = -1*COUNT_NUM + random.nextInt(COUNT_NUM * 2);
-            list.add(number);
-        }
-    }
-    private static void printList() {
-        for (Integer aList : list) {
-            System.out.print(aList + " ");
-        }
+        list = new Random(System.currentTimeMillis()).ints(COUNT_NUM, FROM, TO).boxed().collect(Collectors.toList());
+        list.forEach(s -> System.out.print(s + " "));
         System.out.println();
+        list.stream().sorted((x, y) -> (y - x)).forEach(s -> System.out.print(s + " "));
+        GlobalUtil.postScriptum("Michael Sheshilov", "06.02.2020 22:30");
     }
 }

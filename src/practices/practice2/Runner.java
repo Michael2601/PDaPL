@@ -7,11 +7,12 @@ import java.util.Random;
 import java.util.Scanner;
 
 /**
- * Сгенерировать 20 случайных целых чисел в диапазоне от -5 до 4, записать их в ячейки массива.
+ * @author Michael Sheshilov
+ * <p><strong>Вариант 27</strong></p>
+ * <p>Сгенерировать 20 случайных целых чисел в диапазоне от -5 до 4, записать их в ячейки массива.
  * Посчитать сколько среди них положительных, отрицательных и нулевых значений. Вывести на экран
- * элементы массива и посчитанные количества.
- * <p>
- * Выяснить, какое число встречается в какой строке раньше - положительное или отрицательное
+ * элементы массива и посчитанные количества.</p>
+ * <p>Выяснить, какое число встречается в какой строке раньше - положительное или отрицательное</p>
  */
 public class Runner {
     private static final int COUNT_NUM = 20;
@@ -28,10 +29,10 @@ public class Runner {
                     System.out.println("Individual task 1\n");
                     int[] arr = new Random(System.currentTimeMillis()).ints(COUNT_NUM, FROM, TO).toArray();
                     Arrays.stream(arr).forEach(s -> System.out.print(s + " "));
-                    System.out.println();
-                    System.out.println(Arrays.stream(arr).filter(s -> s > 0).count());
-                    System.out.println(Arrays.stream(arr).filter(s -> s < 0).count());
-                    System.out.println(Arrays.stream(arr).filter(s -> s == 0).count());
+
+                    System.out.println("\nNumber of positive = " + Arrays.stream(arr).filter(s -> s > 0).count());
+                    System.out.println("Number of negative = " + Arrays.stream(arr).filter(s -> s < 0).count());
+                    System.out.println("Number of zero = " + Arrays.stream(arr).filter(s -> s == 0).count());
                     break;
                 case 2:
                     System.out.println("Individual task 2\nEnter rows and columns:");

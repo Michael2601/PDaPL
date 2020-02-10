@@ -22,7 +22,7 @@ public class Runner {
     public static void main(String[] args) {
         Boiler boiler = new Boiler("Gas", 40, 5);
         ExpansionTank tank = new ExpansionTank(10, "Steel");
-        List<Battery> batteries = new ArrayList<Battery>();
+        List<Battery> batteries = new ArrayList<>();
         batteries.add(new Battery(20));
         batteries.add(new Battery(30));
         batteries.add(new Battery(20, 900));

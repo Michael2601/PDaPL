@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Railway xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="railwayXSD.xsd">
+    <Depot>
+        <DepotNumber>1</DepotNumber>
+        <Train>
+            <TrainName>Stork 1</TrainName>
+            <CompositionElement>
+                <CompositionElementName>Locomotive</CompositionElementName>
+                <Employee>
+                    <Id>000001</Id>
+                    <Gender>male</Gender>
+                    <FirstName>Test1</FirstName>
+                    <LastName>Test1</LastName>
+                    <MiddleName>Test1</MiddleName>
+                    <EmployeeRole>Driver</EmployeeRole>
+                </Employee>
+                <Employee>
+                    <Id>000002</Id>
+                    <Gender>male</Gender>
+                    <FirstName>Test2</FirstName>
+                    <LastName>Test2</LastName>
+                    <MiddleName>Test2</MiddleName>
+                    <EmployeeRole>Assistant driver</EmployeeRole>
+                </Employee>
+                <Employee>
+                    <Id>000003</Id>
+                    <Gender>male</Gender>
+                    <FirstName>Test3</FirstName>
+                    <LastName>Test3</LastName>
+                    <MiddleName>Test3</MiddleName>
+                    <EmployeeRole>Main conductor</EmployeeRole>
+                </Employee>
+            </CompositionElement>
+            <CompositionElement>
+                <CompositionElementName>Carriage 1</CompositionElementName>
+                <Employee>
+                    <Id>000004</Id>
+                    <Gender>female</Gender>
+                    <FirstName>Test4</FirstName>
+                    <LastName>Test4</LastName>
+                    <MiddleName>Test4</MiddleName>
+                    <EmployeeRole>Conductor</EmployeeRole>
+                </Employee>
+                <Employee>
+                    <Id>000005</Id>
+                    <Gender>female</Gender>
+                    <FirstName>Test5</FirstName>
+                    <LastName>Test5</LastName>
+                    <MiddleName>Test5</MiddleName>
+                    <EmployeeRole>Assistant conductor</EmployeeRole>
+                </Employee>
+            </CompositionElement>
+        </Train>
+        <Train>
+            <TrainName>Stork 2</TrainName>
+            <CompositionElement>
+                <CompositionElementName>Locomotive</CompositionElementName>
+                <Employee>
+                    <Id>000006</Id>
+                    <Gender>male</Gender>
+                    <FirstName>Test6</FirstName>
+                    <LastName>Test6</LastName>
+                    <MiddleName>Test6</MiddleName>
+                    <EmployeeRole>Driver</EmployeeRole>
+                </Employee>
+                <Employee>
+                    <Id>000007</Id>
+                    <Gender>male</Gender>
+                    <FirstName>Test7</FirstName>
+                    <LastName>Test7</LastName>
+                    <MiddleName>Test7</MiddleName>
+                    <EmployeeRole>Assistant driver</EmployeeRole>
+                </Employee>
+                <Employee>
+                    <Id>000008</Id>
+                    <Gender>male</Gender>
+                    <FirstName>Test8</FirstName>
+                    <LastName>Test8</LastName>
+                    <MiddleName>Test8</MiddleName>
+                    <EmployeeRole>Main conductor</EmployeeRole>
+                </Employee>
+            </CompositionElement>
+            <CompositionElement>
+                <CompositionElementName>Carriage 1</CompositionElementName>
+                <Employee>
+                    <Id>000009</Id>
+                    <Gender>female</Gender>
+                    <FirstName>Test9</FirstName>
+                    <LastName>Test9</LastName>
+                    <MiddleName>Test9</MiddleName>
+                    <EmployeeRole>Conductor</EmployeeRole>
+                </Employee>
+                <Employee>
+                    <Id>000010</Id>
+                    <Gender>female</Gender>
+                    <FirstName>Test10</FirstName>
+                    <LastName>Test10</LastName>
+                    <MiddleName>Test10</MiddleName>
+                    <EmployeeRole>Assistant conductor</EmployeeRole>
+                </Employee>
+            </CompositionElement>
+        </Train>
+    </Depot>
+</Railway>

@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:element name="Railway" type="RailwayType">
+        <xs:annotation>
+            <xs:documentation>
+                Top-level element holding a collection of Depots elements.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:unique name="UniqueIdKey">
+            <xs:selector xpath=".//Depot/Train/CompositionElement/Employee"/>
+            <xs:field xpath="Id"/>
+        </xs:unique>
+    </xs:element>
+
+    <xs:complexType name="RailwayType">
+        <xs:sequence>
+            <xs:element name="Depot" type="DepotType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="DepotType">
+        <xs:sequence>
+            <xs:element name="DepotNumber" type="xs:int"/>
+            <xs:element name="Train" type="TrainType" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="TrainType">
+        <xs:sequence>
+            <xs:element name="TrainName" type="xs:string"/>
+            <xs:element name="CompositionElement" type="CompositionType" minOccurs="1" maxOccurs="30"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="CompositionType">
+        <xs:sequence>
+            <xs:element name="CompositionElementName" type="xs:string"/>
+            <xs:element name="Employee" type="EmployeeType" minOccurs="2" maxOccurs="10"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="EmployeeType">
+        <xs:sequence>
+            <xs:element name="Id" type="idType" minOccurs="1" maxOccurs="1">
+
+            </xs:element>
+            <xs:element name="Gender" type="genderType" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="FirstName" type="xs:string" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="LastName" type="xs:string" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="MiddleName" type="xs:string" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="EmployeeRole" type="roleType" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="genderType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="male|female"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="roleType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Driver"/>
+            <xs:enumeration value="Assistant driver"/>
+            <xs:enumeration value="Main conductor"/>
+            <xs:enumeration value="Conductor"/>
+            <xs:enumeration value="Assistant conductor"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="idType">
+        <xs:restriction base="xs:int">
+            <xs:pattern value="[0-9]{6}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

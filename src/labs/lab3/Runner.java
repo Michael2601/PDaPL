@@ -21,6 +21,6 @@ public class Runner {
         list.forEach(s -> System.out.print(s + " "));
         System.out.println();
         list.stream().sorted((x, y) -> (y - x)).forEach(s -> System.out.print(s + " "));
-        GlobalUtil.postScriptum("Michael Sheshilov", "06.02.2020 22:30");
+        GlobalUtil.postScriptum("Michael Sheshilov", "13.02.2020 22:30");
     }
 }

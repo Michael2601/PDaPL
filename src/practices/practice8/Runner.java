@@ -5,6 +5,7 @@ import practices.practice8.parsers.DOMParser;
 import practices.practice8.parsers.SaxParser;
 import practices.practice8.parsers.StAXParser;
 import practices.practice8.utils.XslConverter;
+import utils.GlobalUtil;
 
 import java.io.FileWriter;
 
@@ -31,6 +32,7 @@ public class Runner {
             } catch (Exception e) {
                 e.printStackTrace(System.out);
             }
+            GlobalUtil.postScriptum("Michael Sheshilov", "13.02.2020 22:30");
         }
 
     }

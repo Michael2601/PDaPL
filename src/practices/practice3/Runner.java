@@ -34,6 +34,6 @@ public class Runner {
         system.startHeating();
         system.pour(new Water(100));
         system.startHeating();
-        GlobalUtil.postScriptum("Michael Sheshilov", "06.02.2020 22:30");
+        GlobalUtil.postScriptum("Michael Sheshilov", "13.02.2020 22:30");
     }
 }

@@ -41,7 +41,7 @@ public class Runner {
                 case 3:
                     cycleBool = false;
                     sc.close();
-                    GlobalUtil.postScriptum("Michael Sheshilov", "06.02.2020 22:30");
+                    GlobalUtil.postScriptum("Michael Sheshilov", "13.02.2020 22:30");
                     break;
                 default:
                     System.out.println("Incorrect number");

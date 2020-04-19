@@ -19,7 +19,7 @@ public class Runner {
         sc.close();
         System.out.println("Binary view : " + Integer.toBinaryString(number));
         System.out.println("# of unit bits : " + bitCounter(number));
-        GlobalUtil.postScriptum("Michael Sheshilov", "06.02.2020 22:00");
+        GlobalUtil.postScriptum("Michael Sheshilov", "13.02.2020 22:00");
     }
 
     /**

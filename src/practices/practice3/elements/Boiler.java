@@ -13,7 +13,6 @@ public class Boiler extends HeatingElement {
     private String type;
     private double heatSpeed;
 
-    @SuppressWarnings("unused")
     public Boiler(String type, int capacity, double heatSpeed) {
         super(capacity);
         this.type = type;

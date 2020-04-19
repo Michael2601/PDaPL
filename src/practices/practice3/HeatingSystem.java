@@ -38,7 +38,7 @@ public class HeatingSystem {
     }
 
     private int getPercentOfFullness() {
-        return fullness/capacity * 100;
+        return fullness / capacity * 100;
     }
 
     public void startHeating() {

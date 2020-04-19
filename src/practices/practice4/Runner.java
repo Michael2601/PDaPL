@@ -21,7 +21,7 @@ public class Runner {
         String text = sc.nextLine();
         System.out.println(createRegex(sc).matcher(text.toLowerCase()).results().count());
         sc.close();
-        GlobalUtil.postScriptum("Michael Sheshilov", "06.02.2020 22:30");
+        GlobalUtil.postScriptum("Michael Sheshilov", "13.02.2020 22:30");
     }
 
     @NotNull

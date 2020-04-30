@@ -3,7 +3,9 @@ package practices.practice8.instances;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.TreeSet;
-
+/**
+ * @author Michael Sheshilov
+ */
 @SuppressWarnings("unused")
 public class Railway {
     private Collection<Depot> depots = new ArrayList<>();

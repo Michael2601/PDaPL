@@ -12,7 +12,9 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
-
+/**
+ * @author Michael Sheshilov
+ */
 public class DOMParser {
     @NotNull
     public static Railway parseXmlDom(String xmlPath) {

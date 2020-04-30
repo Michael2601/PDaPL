@@ -8,7 +8,9 @@ import practices.practice3.elements.HeatingElement;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-
+/**
+ * @author Michael Sheshilov
+ */
 @SuppressWarnings("unused")
 public class HeatingSystem {
     private int capacity;

@@ -7,7 +7,9 @@ import javax.xml.transform.stream.StreamSource;
 import java.io.ByteArrayOutputStream;
 import java.io.FileInputStream;
 import java.io.InputStream;
-
+/**
+ * @author Michael Sheshilov
+ */
 public class XslConverter {
 
     public String xmlToString(String xmlFile, String xslFile) throws Exception {

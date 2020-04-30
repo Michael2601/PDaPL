@@ -5,7 +5,9 @@ import practices.practice3.Water;
 
 import java.util.Objects;
 import java.util.concurrent.TimeUnit;
-
+/**
+ * @author Michael Sheshilov
+ */
 @SuppressWarnings("unused")
 public class Boiler extends HeatingElement {
 

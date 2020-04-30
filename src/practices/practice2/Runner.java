@@ -22,7 +22,11 @@ public class Runner {
     public static void main(String[] args) {
         boolean cycleBool = true;
         Scanner sc = new Scanner(System.in);
-        System.out.printf("%s\n%s\n%s\n", "1. Individual task 1", "2. Individual task 2", "3. Exit");
+        System.out.printf("""
+                %s
+                %s
+                %s
+                """, "1. Individual task 1", "2. Individual task 2", "3. Exit");
         while (cycleBool) {
             switch (GlobalUtil.getNumber(sc)) {
                 case 1:

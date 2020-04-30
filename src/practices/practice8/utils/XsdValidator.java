@@ -9,7 +9,9 @@ import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
 import java.io.File;
 import java.io.IOException;
-
+/**
+ * @author Michael Sheshilov
+ */
 public class XsdValidator {
     public static boolean validateXMLSchema(String xsdPath, String xmlPath)
     {

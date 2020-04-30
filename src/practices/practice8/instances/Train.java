@@ -4,7 +4,9 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Objects;
 import java.util.TreeSet;
-
+/**
+ * @author Michael Sheshilov
+ */
 @SuppressWarnings("unused")
 public class Train {
     private String trainName;

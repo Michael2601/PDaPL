@@ -2,7 +2,9 @@ package utils;
 
 import java.util.Date;
 import java.util.Scanner;
-
+/**
+ * @author Michael Sheshilov
+ */
 public class GlobalUtil {
     /**
      * <p>Output Post Scriptum</p>

@@ -1,7 +1,9 @@
 package practices.practice8.instances;
 
 import java.util.Objects;
-
+/**
+ * @author Michael Sheshilov
+ */
 @SuppressWarnings("unused")
 public class Employee {
     private int id;

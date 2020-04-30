@@ -15,7 +15,7 @@ import java.util.Scanner;
  * <p>3. Создайте программу, вычисляющую числа Фибоначчи. Числа Фибоначчи –
  * последовательность чисел, в котором каждое следующее число равно сумме двух предыдущих.</p>
  * <p>4. Создайте программу, вычисляющую факториал целого числа.</p>
- * <p>D приведенных ниже заданиях необходимо вывести внизу фамилию разработчика, дату и время
+ * <p>В приведенных ниже заданиях необходимо вывести внизу фамилию разработчика, дату и время
  * получения задания, а также дату и время сдачи задания.
  * Добавить комментарии в программы в виде \/**комментарий*\/ сгенерировать html-файл
  * документации.В заданиях на числа объект можно создавать в виде массива символов.
@@ -30,7 +30,14 @@ public class Runner {
     public static void main(String[] args) {
         boolean cycleBool = true;
         Scanner sc = new Scanner(System.in);
-        System.out.printf("%s\n%s\n%s\n%s\n%s\n%s\n", "1. Divisibility", "2. Reverse", "3. Fibonacci", "4. Factorial", "5. Individual task", "6. Exit");
+        System.out.printf("""
+                %s
+                %s
+                %s
+                %s
+                %s
+                %s
+                """, "1. Divisibility", "2. Reverse", "3. Fibonacci", "4. Factorial", "5. Individual task", "6. Exit");
         while (cycleBool) {
             switch (GlobalUtil.getNumber(sc)) {
                 case 1:

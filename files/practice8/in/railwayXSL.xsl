@@ -58,8 +58,4 @@
             <xsl:value-of select="../CompositionElementName"/>
         </td>
     </xsl:template>
-
-    <xsl:template name="PrintEmployee">
-
-    </xsl:template>
 </xsl:stylesheet>

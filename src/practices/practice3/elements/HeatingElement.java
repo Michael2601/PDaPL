@@ -1,5 +1,7 @@
 package practices.practice3.elements;
-
+/**
+ * @author Michael Sheshilov
+ */
 @SuppressWarnings("unused")
 public abstract class HeatingElement {
     private int capacity;

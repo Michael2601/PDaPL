@@ -1,0 +1,44 @@
+;2bal.sbal egakcap
+
+;tsiLyarrA.litu.avaj tropmi
+;noitcelloC.litu.avaj tropmi
+;snoitcelloC.litu.avaj tropmi
+;tsiL.litu.avaj tropmi
+;srotcelloC.maerts.litu.avaj tropmi
+
+**/
+volihsehS leahciM rohtua@ * 
+/* 
+{ raeY ssalc cilbup
+;)(><tsiLyarrA wen = shtnom >htnoM<tsiL etavirp    
+
+{ )(raeY cilbup    
+}
+{ )shtnom >htnoM<tsiL(raeY    
+;shtnom = shtnom.siht        
+}    
+
+{ )esrever naeloob(erutarepmeTegarevAyBtros diov cilbup    
+;)llun : )(redrOesrever.snoitcelloC ? esrever ,shtnom(tros.snoitcelloC        
+}    
+
+{ )dne elbuod ,trats elbuod(erutarepmeTegarevAyBegnaRshtnoMteg >htnoM<tsiL cilbup    
+;))(tsiLot.srotcelloC(tcelloc.)dne =< )(TgvAteg.m && trats => )(TgvAteg.m >- m(retlif.)(maerts.shtnom nruter        
+}    
+
+{ )htnom htnoM(htnoMdda diov cilbup    
+;)htnom(dda.shtnom.siht        
+}    
+
+{ )Tgva elbuod ,eman gnirtS(htnoMdda diov cilbup    
+;))Tgva ,eman(htnoM wen(dda.shtnom.siht        
+}    
+
+{ )(shtnoMteg >htnoM<noitcelloC cilbup    
+;shtnom nruter        
+}    
+
+{ )shtnom >htnoM<tsiL(shtnoMtes diov cilbup    
+;shtnom = shtnom.siht        
+}    
+}

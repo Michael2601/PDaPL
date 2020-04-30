@@ -9,7 +9,9 @@ import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamReader;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-
+/**
+ * @author Michael Sheshilov
+ */
 public class StAXParser {
     @NotNull
     public static Railway parseXmlStAX(String xmlPath) {

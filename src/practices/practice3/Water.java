@@ -1,5 +1,7 @@
 package practices.practice3;
-
+/**
+ * @author Michael Sheshilov
+ */
 @SuppressWarnings("unused")
 public class Water {
     private double temperature;

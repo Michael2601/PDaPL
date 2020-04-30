@@ -1,7 +1,9 @@
 package practices.practice3.elements;
 
 import java.util.Objects;
-
+/**
+ * @author Michael Sheshilov
+ */
 @SuppressWarnings("unused")
 public class Battery extends HeatingElement {
     private int heatFlow;

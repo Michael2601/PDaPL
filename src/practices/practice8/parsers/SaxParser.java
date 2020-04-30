@@ -8,7 +8,9 @@ import practices.practice8.instances.Railway;
 
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
-
+/**
+ * @author Michael Sheshilov
+ */
 public class SaxParser {
     @NotNull
     public static Railway parseXmlSax(String xmlPath) {
